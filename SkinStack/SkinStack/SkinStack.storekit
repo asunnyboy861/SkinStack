@@ -1,0 +1,23 @@
+{
+  "identifier" : "SkinStack",
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "skinstack_pro_001",
+      "localizations" : [
+        {
+          "description" : "Unlock unlimited products, smart routines, and all premium features",
+          "displayName" : "SkinStack Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.zzoutuo.SkinStack.pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
