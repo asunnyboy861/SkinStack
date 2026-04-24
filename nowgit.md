@@ -10,15 +10,18 @@
 | **Visibility** | Public |
 | **Primary Language** | Swift |
 
-## Policy Pages (Separate Repositories)
+## Policy Pages (Deployed from Main Repository)
 
-| Repository | Git URL | Deployed URL | Status |
-|------------|---------|--------------|--------|
-| SkinStack-support | git@github.com:asunnyboy861/SkinStack-support.git | https://asunnyboy861.github.io/SkinStack-support/ | ✅ Active |
-| SkinStack-privacy | git@github.com:asunnyboy861/SkinStack-privacy.git | https://asunnyboy861.github.io/SkinStack-privacy/ | ✅ Active |
-| SkinStack-terms | git@github.com:asunnyboy861/SkinStack-terms.git | https://asunnyboy861.github.io/SkinStack-terms/ | ✅ Active |
+All policy and support pages are now deployed from the main SkinStack repository via GitHub Pages.
 
-**Note**: Each policy page is deployed from its own repository using GitHub Pages for independent management.
+| Page | URL | Status |
+|------|-----|--------|
+| Landing Page | https://asunnyboy861.github.io/SkinStack/ | ✅ Active |
+| Support | https://asunnyboy861.github.io/SkinStack/support.html | ✅ Active |
+| Privacy Policy | https://asunnyboy861.github.io/SkinStack/privacy.html | ✅ Active |
+| Terms of Use | https://asunnyboy861.github.io/SkinStack/terms.html | ✅ Active |
+
+**Note**: All pages are deployed from the `main` branch root directory using GitHub Pages. No separate repositories needed.
 
 ## Repository Structure
 
@@ -32,6 +35,10 @@ SkinStack/
 │   │   ├── Services/             # Business Logic
 │   │   └── ...
 │   └── ...
+├── index.html                    # GitHub Pages Landing Page
+├── support.html                  # Support Page
+├── privacy.html                  # Privacy Policy
+├── terms.html                    # Terms of Use
 ├── us.md                         # English Development Guide
 ├── keytext.md                    # App Store Metadata
 ├── capabilities.md               # Capabilities Configuration
