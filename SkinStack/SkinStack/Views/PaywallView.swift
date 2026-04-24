@@ -106,8 +106,8 @@ struct PaywallView: View {
     private var legalSection: some View {
         VStack(spacing: 8) {
             HStack(spacing: 16) {
-                Link("Privacy Policy", destination: URL(string: "https://asunnyboy861.github.io/SkinStack/privacy.html")!)
-                Link("Terms of Use", destination: URL(string: "https://asunnyboy861.github.io/SkinStack/terms.html")!)
+                Link("Privacy Policy", destination: URL(string: "https://asunnyboy861.github.io/SkinStack-privacy/")!)
+                Link("Terms of Use", destination: URL(string: "https://asunnyboy861.github.io/SkinStack-terms/")!)
             }
             .font(.caption)
             .foregroundStyle(.secondary)

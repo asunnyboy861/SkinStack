@@ -73,13 +73,13 @@ struct SettingsView: View {
     
     private var aboutSection: some View {
         Section("About") {
-            Link(destination: URL(string: "mailto:support@zzoutuo.com?subject=SkinStack%20Feedback")!) {
-                Label("Contact Support", systemImage: "envelope.fill")
+            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack-support/")!) {
+                Label("Support", systemImage: "questionmark.circle.fill")
             }
-            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack/privacy.html")!) {
+            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack-privacy/")!) {
                 Label("Privacy Policy", systemImage: "hand.raised.fill")
             }
-            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack/terms.html")!) {
+            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack-terms/")!) {
                 Label("Terms of Use", systemImage: "doc.text.fill")
             }
             HStack {
