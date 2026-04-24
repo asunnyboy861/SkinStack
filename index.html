@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinStack - Smart Skincare Routine Builder</title>
+    <meta name="description" content="Build smarter skincare routines with conflict detection. SkinStack warns you about ingredient conflicts before they cause breakouts.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #faf5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(180deg, #fff5f5 0%, #faf5f5 100%);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #e8727a;
+            margin-bottom: 16px;
+        }
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e8727a;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .cta-button:hover {
+            background: #d45a63;
+            transform: translateY(-2px);
+        }
+        .features {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .feature-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            color: #e8727a;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .pricing {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+        .pricing h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+        .price-cards {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .price-card {
+            background: #faf5f5;
+            border-radius: 16px;
+            padding: 32px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 320px;
+        }
+        .price-card.pro {
+            background: #e8727a;
+            color: white;
+        }
+        .price-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+        .price-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 16px 0;
+        }
+        .price-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .price-card ul {
+            list-style: none;
+            text-align: left;
+        }
+        .price-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        .price-card.pro ul li {
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        .price-card ul li:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #e8727a;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>SkinStack</h1>
+        <p class="tagline">Build smarter skincare routines with intelligent conflict detection. Know which ingredients work together — and which don't.</p>
+        <a href="https://apps.apple.com/app/skinstack" class="cta-button">Download on the App Store</a>
+    </div>
+
+    <div class="features">
+        <h2>Why SkinStack?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">🧴</div>
+                <h3>Smart Routines</h3>
+                <p>Automatically sort your products into AM/PM routines with the correct layering order.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚠️</div>
+                <h3>Conflict Detection</h3>
+                <p>Get warned when ingredients don't mix — like Retinol + AHA or Vitamin C + Benzoyl Peroxide.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📷</div>
+                <h3>Ingredient Scanner</h3>
+                <p>Point your camera at any product label and instantly add ingredients to your routine.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⏱️</div>
+                <h3>Wait-Time Timer</h3>
+                <p>Know exactly how long to wait between products for maximum effectiveness.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📓</div>
+                <h3>Skin Journal</h3>
+                <p>Track your skin condition daily and see your improvement trend over time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>100% Private</h3>
+                <p>All data stays on your device. No accounts, no tracking, no analytics.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing">
+        <h2>Simple, Honest Pricing</h2>
+        <div class="price-cards">
+            <div class="price-card">
+                <h3>Free</h3>
+                <div class="price">$0</div>
+                <ul>
+                    <li>Up to 3 products</li>
+                    <li>Basic conflict detection</li>
+                    <li>AM/PM routine builder</li>
+                    <li>100% offline</li>
+                </ul>
+            </div>
+            <div class="price-card pro">
+                <h3>Pro</h3>
+                <div class="price">$4.99 <span>one-time</span></div>
+                <ul>
+                    <li>Unlimited products</li>
+                    <li>Ingredient scanner</li>
+                    <li>Wait-time timer</li>
+                    <li>Skin journal</li>
+                    <li>No subscription, ever</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </p>
+        <p style="margin-top: 16px;">© 2026 SkinStack. All rights reserved.</p>
+    </div>
+</body>
+</html>
