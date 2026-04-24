@@ -76,10 +76,10 @@ struct SettingsView: View {
             Link(destination: URL(string: "mailto:support@zzoutuo.com?subject=SkinStack%20Feedback")!) {
                 Label("Contact Support", systemImage: "envelope.fill")
             }
-            Link(destination: URL(string: "https://zzoutuo.com/skinstack/privacy")!) {
+            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack/privacy.html")!) {
                 Label("Privacy Policy", systemImage: "hand.raised.fill")
             }
-            Link(destination: URL(string: "https://zzoutuo.com/skinstack/terms")!) {
+            Link(destination: URL(string: "https://asunnyboy861.github.io/SkinStack/terms.html")!) {
                 Label("Terms of Use", systemImage: "doc.text.fill")
             }
             HStack {
